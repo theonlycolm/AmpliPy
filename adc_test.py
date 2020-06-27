@@ -9,10 +9,10 @@ import time
 import os
 
 
-CLK = 18
-MISO = 23
-MOSI = 24
-CS = 25
+CLK = 05 #18
+MISO = 06 #23
+MOSI = 13 #24
+CS = 19 #25
 
 channel = 3
 
