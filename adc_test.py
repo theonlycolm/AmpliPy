@@ -95,7 +95,8 @@ if __name__ == '__main__':
 
         while True:
             val = readAdc(channel, CLK, MISO, MOSI, CS)
-            print "ADC Value: ", str(val)
+            print "For Ch ", channel, "CLK ", CLK, "MISO ", MISO, "MOSI ", MOSI, "CS ", CS
+            print "--> ADC Value is ", str(val)
             time.sleep(1)
 
     except KeyboardInterrupt:
