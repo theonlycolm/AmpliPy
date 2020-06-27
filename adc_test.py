@@ -51,7 +51,7 @@ def readAdc(channel, clkPin, misoPin, mosiPin, csPin):
     return adcValue
 
 
-def sendBits (data. numBits, clkPin, mosiPin):
+def sendBits (data, numBits, clkPin, mosiPin):
     '''sends 1 byte or less'''
     data <<= (8-numBits)
 
