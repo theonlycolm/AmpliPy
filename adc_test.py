@@ -14,7 +14,7 @@ MISO = 23
 MOSI = 24
 CS = 25
 
-channel = 0
+channel = 3
 
 def configSpiPins(clkPin, misoPin, mosiPin, csPin):
     GPIO.setup(clkPin, GPIO.OUT)
@@ -95,7 +95,8 @@ if __name__ == '__main__':
 
         while True:
             val = readAdc(channel, CLK, MISO, MOSI, CS)
-            print "ADC Value: ", str(val)
+            print "For Ch ", channel, "CLK ", CLK, "MISO ", MISO, "MOSI ", MOSI, "CS ", CS
+            print "--> ADC Value is ", str(val)
             time.sleep(1)
 
     except KeyboardInterrupt:
