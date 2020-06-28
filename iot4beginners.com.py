@@ -7,6 +7,7 @@ import datetime
 # Start SPI connection
 spi = spidev.SpiDev() # Created an object
 spi.open(0,1) 
+print("SPI device {} open".format(spi))
 # Read MCP3008 data
 def analogInput(channel):
   spi.max_speed_hz = 1350000
