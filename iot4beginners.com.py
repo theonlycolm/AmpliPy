@@ -16,7 +16,7 @@ def analogInput(channel):
   return data
 
 while True:
-  output = analogInput(1) # Reading from CH0
+  output = analogInput(2) # Reading from CH0
   x = datetime.datetime.now()
   print("ADC reading: {} {}".format(output,x))
   sleep(1)
