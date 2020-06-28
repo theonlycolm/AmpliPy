@@ -6,7 +6,7 @@ import datetime
 # To add delay
 # Start SPI connection
 spi = spidev.SpiDev() # Created an object
-spi.open(0,0) 
+spi.open(0,1) 
 # Read MCP3008 data
 def analogInput(channel):
   spi.max_speed_hz = 1350000
