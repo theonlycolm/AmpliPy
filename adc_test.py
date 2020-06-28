@@ -38,6 +38,8 @@ def readAdc(channel, clkPin, misoPin, mosiPin, csPin):
     # channel num bit 2
     # channel num bit 1
     # channel num bit 0 (LSB)
+
+    #0x18 is the address of the slave
     read_command = 0x18
     read_command |= channel
     
