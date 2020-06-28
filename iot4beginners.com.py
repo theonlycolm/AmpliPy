@@ -6,7 +6,7 @@ import datetime
 # To add delay
 # Start SPI connection
 spi = spidev.SpiDev() # Created an object
-spi.open(0,1) 
+spi.open(0,0) 
 print("SPI device {} open".format(spi))
 # Read MCP3008 data
 def analogInput(channel):
